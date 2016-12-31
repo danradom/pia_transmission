@@ -1,2 +1,2 @@
 # pia_transmission
-pia / transmission killswitch
+transmission kill switch for PIA VPN
