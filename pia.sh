@@ -9,9 +9,9 @@ down="/usr/local/admin/.pia.down"
 if [ $1 != "status" ]; then
         if [ $EUID != "0" ]; then
                 echo ""
-                echo "you must be root to run this script.  try sudo !!"
+                echo "$0 needs to be ran by root.  re-executing with sudo"
                 echo ""
-                exit 1
+                exec sudo /bin/bash "$0" "$@"
         fi
 fi
 
